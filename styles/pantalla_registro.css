@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), 
+                url("../assets/fondo.png") center/cover no-repeat;
+}
+
+.login_logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.logo_img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login_logo p {
+    color: #1e2846;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.auth_card {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.auth_tabs {
+    display: flex;
+    background-color: #f1f5f9;
+    border-radius: 15px;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.auth_tab, .auth_tab_activo {
+    flex: 1;
+    padding: 12px 0;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.auth_tab {
+    background-color: transparent;
+    color: #64748b;
+}
+
+.auth_tab_activo {
+    background-color: #3f3ff1;
+    color: white;
+}
+
+.auth_label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 5px;
+}
+
+.auth_input_group {
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 12px 15px;
+    transition: 0.3s;
+}
+
+.auth_input_group:focus-within {
+    border-color: #3f3ff1;
+    box-shadow: 0 0 0 3px rgba(63, 63, 241, 0.1);
+}
+
+.auth_input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    background: transparent;
+}
+
+.fila_doble {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.auth_btn_principal {
+    width: 100%;
+    padding: 15px;
+    background-color: #3f3ff1;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth_btn_principal:hover {
+    background-color: #2b2bd6;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 576px) {
+    .fila_doble {
+        grid-template-columns: 1fr; 
+    }
+    .auth_card {
+        padding: 20px;
+        border-radius: 15px;
+    }
+}

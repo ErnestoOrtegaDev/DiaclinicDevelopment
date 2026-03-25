@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.bg_layout {
+    background-color: #d6e9f7;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo_img {
+    width: 50px;
+}
+
+.logo p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.sidebar_menu .nav-link {
+    text-decoration: none;
+    color: #374151;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.sidebar_menu .nav-link.active,
+.sidebar_menu .nav-link:hover {
+    background-color: #3f6ff1;
+    color: white !important;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.content {
+    padding: clamp(20px, 5vw, 40px);
+}
+
+.form_white_card {
+    background-color: white;
+    border-radius: 30px;
+    padding: clamp(20px, 4vw, 40px);
+    max-width: 1100px;
+    margin: auto;
+}
+
+.form-control {
+    width: 100%;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #f1f5f9;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #eef2f7;
+}
+
+.doctor_card {
+    background-color: #dceeff;
+    padding: 25px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.doctor_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.doctor_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+
+.doctor_info h3 {
+    color: #0b3c5d;
+}
+
+.doctor_info p {
+    font-size: 14px;
+    color: #4b5563;
+}
+
+.btn_green {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn_green:hover {
+    background-color: #388e3c;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+@media (max-width: 991px) {
+    .content {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaClinic | Servicios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/servicios.css">
+</head>
+<body>
+
+<div class="container-fluid p-0">
+    <div class="row g-0">
+
+        <div class="col-12 d-lg-none bg-white p-3 d-flex justify-content-between align-items-center border-bottom">
+            <div class="d-flex align-items-center gap-2">
+                <img src="../assets/logo.png" style="width:40px;" alt="Logo">
+                <span class="fw-bold">DiaClinic</span>
+            </div>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral"></button>
+        </div>
+
+        <aside class="col-lg-auto d-none d-lg-flex flex-column sidebar">
+            <div class="logo">
+                <img src="../assets/logo.png" class="logo_img" alt="Logo">
+                <p class="fw-bold mt-2">DiaClinic</p>
+            </div>
+
+            <ul class="menu nav flex-column">
+                <li class="nav-item">Pacientes</li>
+                <li class="nav-item">Consultas</li>
+                <li class="nav-item activo">Servicios</li>
+            </ul>
+        </aside>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title fw-bold">DiaClinic</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="menu nav flex-column">
+                    <li class="nav-item mb-2">Pacientes</li>
+                    <li class="nav-item mb-2">Consultas</li>
+                    <li class="nav-item activo">Servicios</li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="col contenido">
+            <div class="panel_blanco shadow-sm">
+                <h1>Servicios</h1>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="card_custom h-100">
+                            <h3>Consultas</h3>
+                            <p>Agendar o ver tus citas</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-xl-4">
+                        <div class="card_custom h-100">
+                            <h3>Laboratorios</h3>
+                            <p>Resultados y órdenes médicas</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-8">
+                        <div class="card_custom card_grande h-100">
+                            <h3>Historial de Progreso</h3>
+                            <p>Revisa tus niveles de glucosa y actividad física</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-8">
+                        <div class="card_custom card_grande h-100">
+                            <h3>Perfil Alimenticio</h3>
+                            <p>Plan de dieta personalizado y recomendaciones</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

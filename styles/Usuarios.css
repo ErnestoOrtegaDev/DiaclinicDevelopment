@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #e9edf3;
+}
+
+.sidebar {
+    width: 260px;
+    background: #f5f6fa;
+    padding: 30px 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    border-radius: 0 25px 25px 0;
+}
+
+.logo img { width: 80px; margin-bottom: 10px; }
+.logo h3 { font-weight: bold; color: #1f2937; margin: 0; }
+
+.menu .nav-link {
+    color: #4b5563;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+}
+
+.menu .nav-link.active {
+    background: #3b82f6 !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.user_profile_box {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.content {
+    background: #ffffff;
+    margin: clamp(10px, 2vw, 25px);
+    padding: clamp(20px, 4vw, 35px);
+    border-radius: 25px;
+    min-height: 90vh;
+}
+
+.page_title { font-weight: bold; margin-bottom: 25px; color: #111827; }
+
+.search_container input {
+    background: #f3f4f6;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+.info_btn {
+    width: 48px;
+    background: #f3f4f6;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+.table thead { background-color: #f9fafb; }
+.table th { border: none; color: #6b7280; font-size: 13px; text-transform: uppercase; padding: 15px; }
+.table td { border-bottom: 1px solid #f3f4f6; padding: 15px; color: #374151; }
+
+.email { color: #2563eb; font-weight: 500; }
+
+.status_active { background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 8px; font-size: 12px; }
+.status_deleted { background: #fee2e2; color: #991b1b; padding: 4px 10px; border-radius: 8px; font-size: 12px; }
+
+.delete_btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: 0.2s;
+}
+
+.delete_btn:hover { background: #dc2626; transform: scale(1.05); }
+
+.page-link {
+    border: none;
+    background: #f3f4f6;
+    color: #374151;
+    margin: 0 4px;
+    border-radius: 8px !important;
+}
+
+.page-item.active .page-link { background: #3b82f6; }
+
+@media (max-width: 991px) {
+    .content { margin: 15px; border-radius: 15px; }
+}

@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e9edf3;
+}
+
+.sidebar {
+    width: 260px;
+    background: #f8fafc;
+    padding: 30px 20px;
+    border-radius: 0 30px 30px 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    box-shadow: 5px 0 15px rgba(0,0,0,0.02);
+}
+
+.logo_section { text-align: center; margin-bottom: 40px; }
+.logo_img { width: 85px; margin-bottom: 15px; }
+.logo_text { font-size: 18px; font-weight: 600; color: #374151; letter-spacing: 2px; }
+.logo_text span { letter-spacing: 4px; font-weight: 400; font-size: 14px; text-transform: uppercase; }
+
+.menu .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 18px;
+    border-radius: 30px;
+    color: #4b5563;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.menu .nav-link.active {
+    background: #c7d2fe;
+    color: #1d4ed8 !important;
+    font-weight: bold;
+}
+
+.user_profile {
+    background: #f1f5f9;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.main_content { padding: clamp(15px, 3vw, 40px); }
+
+.content_card {
+    background: white;
+    border-radius: 35px;
+    padding: clamp(20px, 4vw, 40px);
+    min-height: 85vh;
+}
+
+.page_title {
+    text-align: center;
+    font-size: clamp(24px, 5vw, 34px);
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.form_group textarea {
+    height: 150px;
+    border-radius: 15px;
+    padding: 20px;
+    background: #f1f5f9 !important;
+    resize: none;
+    font-size: 15px;
+}
+
+.btn_primary {
+    background: linear-gradient(90deg, #3b82f6, #6366f1);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn_primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+}
+
+.btn_danger {
+    background: #ef4444;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .main_content { padding: 15px; }
+    .content_card { border-radius: 20px; }
+}
+

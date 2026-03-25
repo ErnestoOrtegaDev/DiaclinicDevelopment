@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d6e9f7;
+}
+
+.sidebar_container {
+    width: 260px;
+    background-color: #ffffff;
+    padding: 25px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar_logo_top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.sidebar_logo_top img { width: 45px; }
+.sidebar_logo_top p { font-size: 20px; font-weight: bold; margin: 0; }
+
+.sidebar_nav_item {
+    text-decoration: none;
+    color: #444;
+    padding: 12px 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sidebar_item_active {
+    background-color: #f1f4fa;
+    color: #3f6ff1 !important;
+    font-weight: bold;
+}
+
+.main_content_wrapper {
+    background-color: #f4f7fa;
+    margin: clamp(10px, 2vw, 25px);
+    border-radius: 30px;
+    padding: clamp(20px, 4vw, 40px);
+}
+
+.page_header_title { font-size: 28px; }
+.patient_name_badge {
+    display: inline-block;
+    background-color: #e4efff;
+    color: #3f6ff1;
+    padding: 6px 14px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card_success_green, .card_danger_red, .card_warning_yellow, .card_info_orange {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card_success_green { background-color: #daf7e6; }
+.card_danger_red { background-color: #f7e0de; }
+.card_warning_yellow { background-color: #fff8e1; }
+.card_info_orange { background-color: #f9e9d5; }
+
+.card_header_text { font-weight: bold; font-size: 16px; margin-bottom: 12px; }
+.card_list_items { font-size: 14px; }
+
+.btn_save_large {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn_save_large:hover { background-color: #43a047; }
+
+@media (max-width: 991px) {
+    .sidebar_container { height: auto; }
+    .main_content_wrapper { margin: 15px; border-radius: 20px; }
+}

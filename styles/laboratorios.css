@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    background-color: #d6e9f7;
+    font-family: Arial, sans-serif;
+}
+.sidebar {
+    width: 240px;
+    background: #ffffff;
+    padding: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.logo { text-align: center; }
+.logo_img { width: 60px; }
+
+.menu { margin-top: 40px; }
+
+.menu_item {
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.menu_item.active {
+    background-color: #e7f0ff;
+    color: #2563eb !important;
+    font-weight: bold;
+}
+.main_content {
+    padding: clamp(15px, 3vw, 40px);
+}
+
+.card_form {
+    background: white;
+    border-radius: 24px;
+    padding: clamp(20px, 5vw, 40px);
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    font-size: clamp(24px, 4vw, 32px);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.gray_input,
+.dropdown_select_clinic {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px;
+    border-radius: 10px;
+    border: none;
+    background: #f1f1f1;
+    outline: none;
+}
+
+.lab_selection_wrapper {
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.lab_options_scroll_list {
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.lab_list_item {
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lab_list_item:hover {
+    background-color: #e0e7ff;
+}
+
+.lab_list_item.selected {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn_primary, .btn_secondary {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn_primary { background: #3b82f6; color: white; }
+.btn_secondary { background: #ef4444; color: white; }
+
+.btn_primary:hover { background: #2563eb; }
+.btn_secondary:hover { background: #dc2626; }
+
+@media (max-width: 576px) {
+    .buttons_container {
+        flex-direction: column;
+    }
+}

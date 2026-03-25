@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiaClinic | Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/pantalla_registro.css">
+</head>
+<body class="login_container p-3">
+
+    <div class="login_logo">
+        <img src="../assets/logo.png" class="logo_img shadow-sm" alt="Logo">
+        <p class="m-0">DiaClinic</p>
+    </div>
+
+    <div class="auth_card shadow-lg">
+
+        <div class="auth_tabs">
+            <button type="button" class="auth_tab" onclick="window.location.href='pantalla_login.html'">Iniciar Sesion</button>
+            <button type="button" class="auth_tab_activo">Registrarse</button>
+        </div>
+
+        <form action="../controllers/registro.php" method="POST">
+            <div class="mb-3">
+                <label class="auth_label">Nombres</label>
+                <div class="auth_input_group">
+                    <input type="text" class="auth_input" name="nombres" placeholder="Juan" required>
+                </div>
+            </div>
+
+            <div class="fila_doble mb-3">
+                <div>
+                    <label class="auth_label">Apellido Paterno</label>
+                    <div class="auth_input_group">
+                        <input type="text" class="auth_input" name="ap_paterno" placeholder="Perez" required>
+                    </div>
+                </div>
+                <div>
+                    <label class="auth_label">Apellido Materno</label>
+                    <div class="auth_input_group">
+                        <input type="text" class="auth_input" name="ap_materno" placeholder="Lopez">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="auth_label">Correo electrónico</label>
+                <div class="auth_input_group">
+                    <input type="email" class="auth_input" name="email" placeholder="juanperez@example.com" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="auth_label">Número de teléfono</label>
+                <div class="auth_input_group">
+                    <input type="tel" class="auth_input" name="telefono" placeholder="+52 123 456 7890">
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label class="auth_label">Contraseña</label>
+                <div class="auth_input_group">
+                    <input type="password" class="auth_input" name="password" placeholder="********" required>
+                </div>
+            </div>
+
+            <button type="submit" class="auth_btn_principal shadow">
+                Crear cuenta
+            </button>
+            
+            <p class="text-center mt-3 mb-0 small text-muted">
+                Al registrarte, aceptas nuestros <a href="#" class="text-decoration-none">Términos y Condiciones</a>.
+            </p>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

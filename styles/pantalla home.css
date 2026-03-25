@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar_dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px; 
+    background-color: #ffffff;
+}
+
+.navbar_brand_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #0b3c5d !important;
+}
+
+.navbar_brand_logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar_menu_links .nav-link {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333 !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user_profile_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero_section_container {
+    display: flex;
+    align-items: center;
+    padding: 60px 80px; 
+    background-color: #e8f5fb;
+    flex-grow: 1; 
+}
+
+.hero_title_text {
+    font-size: 52px;
+    font-weight: bold;
+    color: #0b3c5d;
+    margin-bottom: 30px;
+}
+
+.hero_description {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.btn_action_green {
+    background-color: #6bbf7c;
+    color: white;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_action_green:hover {
+    background-color: #5aa86a;
+}
+
+.hero_image_right img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 25px;
+}
+
+.footer_bar_container {
+    display: flex;
+    padding: 20px 80px;
+    background-color: #2f5f94;
+    color: white;
+}
+
+.footer_links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+    .navbar_dashboard, .hero_section_container, .footer_bar_container {
+        padding: 20px 40px;
+    }
+    .hero_title_text {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar_dashboard {
+        padding: 20px;
+        text-align: center;
+    }
+    .navbar_menu_links .nav-link {
+        margin: 5px;
+    }
+    .hero_section_container {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .hero_title_text {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    .footer_bar_container {
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .footer_links a {
+        margin-left: 0;
+    }
+}
