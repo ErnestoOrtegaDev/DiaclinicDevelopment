@@ -39,7 +39,7 @@ Sigue estos pasos para clonar el proyecto y configurarlo en tu entorno local usa
 ### 1. Clonar el repositorio
 Abre tu terminal (Git Bash o CMD) y navega hasta la carpeta `htdocs` de tu instalación de XAMPP (por lo general, `C:\xampp\htdocs\` o `D:\xampp\htdocs\`). Ejecuta el siguiente comando:
 
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/ErnestoOrtegaDev/DiaclinicDevelopment
 
 *Asegúrate de cambiar el nombre de la carpeta a `diaclinic` si se clona con un nombre distinto.*
 
