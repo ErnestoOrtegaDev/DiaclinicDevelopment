@@ -6,7 +6,7 @@ $pass = ""; // En XAMPP por defecto no hay contraseña
 $db = "diabetes_app";
 
 // Si al final MySQL esta en el puerto 3307, descomenta la siguiente línea y agrégala a la conexión
-$puerto = 3307;
+$puerto = 3306;
 $conn = new mysqli($host, $user, $pass, $db, $puerto);
 
 
