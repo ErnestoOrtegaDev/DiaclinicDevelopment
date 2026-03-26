@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $_SESSION['full_name'] = $usuario['full_name'];
                 $_SESSION['role'] = $usuario['role'];
 
-                header("Location: ../views/Usuarios.php");
+                header("Location: ../views/dashboard.php");                
                 exit();
                 
             } else {
